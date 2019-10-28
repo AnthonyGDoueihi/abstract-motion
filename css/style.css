@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 1.5em/1.2 sans-serif;
+	text-align: center;
+}
+
+container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+figure {
+	display: inline-block;
+	margin: 10px;
+	vertical-align: top;
+	color: whitesmoke;
+	/* top: 1px; */
+}
+
+#cam1{
+	position: absolute;
+	left: 75px;
+}
+
+
+#cam2{
+	position: absolute;
+	left: calc(100vw - 480px - 75px);
+}
+
+figcaption {
+	text-align: left;
+	font-weight: bold;
+}
+
+video, canvas {
+	width: 480px;
+	height: 360px;
+	background-color: #999;
+}
+
+canvas {
+	image-rendering: pixelated;
+}
