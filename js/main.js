@@ -59,8 +59,8 @@ function generateParticle(){
 
   const size = random(5, 20);
 
-  const vx = random(-1, 1) * (score % 45) * controls.velocityScale;
-  const vy = random(-1, 1) * (score % 45) * controls.velocityScale;
+  const vx = random(-1, 1) * (score / 45) * controls.velocityScale;
+  const vy = random(-1, 1) * (score / 45) * controls.velocityScale;
 
   const hue = x % 255;
   fill(hue, 255, 255);
